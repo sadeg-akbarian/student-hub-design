@@ -3,21 +3,144 @@
 }
 
 :root {
+  --clr-background-body: #e5e5e5;
+  --clr-main-above: #6a1cc3;
+  --clr-main-below: #8849cf;
+  --font-normal: ;
 }
 
 html {
-  font-family: ;
   direction: ltr;
-  font-size: ;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
-  height: ;
-  background-color: var(--page-background-color);
-  color: var(--page-text-color);
+  height: 100vh;
+  background-color: var(--clr-background-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Fallbacks für manche Styles benutzen, S.13 unten */
+.div-body {
+  max-width: 600px;
+}
 
-/* Füge media queries ein, S.15 unten*/
+/*........................................................................................................................ All aside styles */
+
+aside {
+  width: 391px;
+}
+
+.ansicht {
+  margin-block: 0;
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+/*....................................................................................................................... All header styles */
+
+.div-outward {
+  width: 391px;
+  _height: 100vh;
+  background-color: white;
+}
+
+header {
+  height: 95px;
+  position: relative;
+}
+
+.div-header-heading {
+  height: 85px;
+  background-color: var(--clr-main-above);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.bi-list {
+  color: white;
+  width: 32px;
+  height: 24px;
+}
+
+h1 {
+  all: unset;
+  color: white;
+  margin-block: 0;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.bi-list,
+h1 {
+  position: relative;
+  top: 15px;
+}
+
+.div-header-arrow-light1 {
+  height: 7px;
+  background-color: var(--clr-main-below);
+}
+
+.div-header-arrow-light2 {
+  height: 15px;
+  width: 100%;
+}
+
+.div-header-arrow-dark {
+  position: absolute;
+  top: 85px;
+  height: 15px;
+  width: 100%;
+}
+
+/*......................................................................................................................... All main styles */
+
+main {
+  padding-bottom: 70px;
+}
+
+article {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+.students-h2 {
+  font-size: 18px;
+  color: var(--clr-main-above);
+  margin-bottom: 2px;
+}
+
+.first-paragraph {
+  font-size: 14px;
+  color: #00000099;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.november-h2 {
+  font-size: 16px;
+  color: #00000099;
+}
+
+.the-names {
+  color: var(--clr-main-above);
+}
+
+a {
+  font-size: 12px;
+  color: var(--clr-main-above);
+}
+
+/* The fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
