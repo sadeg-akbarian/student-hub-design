@@ -3,21 +3,241 @@
 }
 
 :root {
+  --clr-background-body: #e5e5e5;
+  --clr-main-above: #6a1cc3;
+  --clr-main-below: #8849cf;
 }
 
 html {
-  font-family: ;
   direction: ltr;
-  font-size: ;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
-  height: ;
-  background-color: var(--page-background-color);
-  color: var(--page-text-color);
+  height: 100vh;
+  background-color: var(--clr-background-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Fallbacks für manche Styles benutzen, S.13 unten */
+/*............................................................................................................................... -> aside .......*/
 
-/* Füge media queries ein, S.15 unten*/
+aside {
+  width: 391px;
+}
+
+.ansicht {
+  margin-block: 0;
+  font-size: 10px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+/*...................................................................................................................... -> .div-outward ......... */
+
+.div-outward {
+  width: 391px;
+  max-width: 600px;
+  background-color: white;
+}
+
+/*.............................................................................................................................. -> header ........*/
+
+header {
+  height: 95px;
+  position: relative;
+}
+
+.div-header-heading {
+  height: 85px;
+  background-color: var(--clr-main-above);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.bi-list {
+  color: white;
+  width: 32px;
+  height: 24px;
+}
+
+h1 {
+  all: unset;
+  color: white;
+  margin-block: 0;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.bi-list,
+h1 {
+  position: relative;
+  top: 15px;
+}
+
+.div-header-arrow-light1 {
+  height: 7px;
+  background-color: var(--clr-main-below);
+}
+
+.div-header-arrow-light2 {
+  height: 15px;
+  width: 100%;
+}
+
+.div-header-arrow-dark {
+  position: absolute;
+  top: 85px;
+  height: 15px;
+  width: 100%;
+}
+
+/*.............................................................................................................................. -> main ..........*/
+
+main {
+  padding-bottom: 70px;
+}
+
+article {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 50px;
+}
+
+/*........................................................................................................ -> main -> .students -> .section-1 ......*/
+
+.students-h2 {
+  font-size: 18px;
+  color: var(--clr-main-above);
+  margin-bottom: 2px;
+}
+
+.first-paragraph {
+  font-size: 14px;
+  color: #00000099;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/*..................................................................... -> main -> .students -> .section-2 -> form-input -> .input-container ........*/
+
+.input-container {
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  top: 27.5%;
+  right: 5%;
+}
+
+.search {
+  width: 100%;
+  height: 36px;
+  padding-left: 7px;
+  border: 1.75px solid var(--clr-main-above);
+  border-radius: 2px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.search::placeholder {
+  all: unset;
+  color: #4b148a61;
+  font-weight: 600;
+  padding-left: 13px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*.................................................................................... -> main -> .students -> .section-2 -> .dropdown-lists .......*/
+
+.dropdown-lists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+select {
+  appearance: none;
+  height: 38px;
+  border: 1.75px solid var(--clr-main-above);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--clr-main-above);
+  padding-inline: 18px 35px;
+  font-family: "Source Sans Pro", sans-serif;
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      white 50%,
+      white 60%,
+      transparent 60%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 50%,
+      white 50%,
+      white 60%,
+      transparent 60%
+    ),
+    linear-gradient(var(--clr-main-below), var(--clr-main-below));
+  background-size: 4.875px 5.25px, 4.875px 5.25px, 17.4px 38px;
+  background-position: calc(100% - 8px) 53%, calc(100% - 3.3px) 53%,
+    calc(100% + 1%);
+
+  background-repeat: no-repeat;
+}
+
+/*..................................................................................................................... -> main -> november .......*/
+
+.november-h2 {
+  font-size: 16px;
+  color: #00000099;
+}
+
+.november > section {
+  display: flex;
+  border: 2px solid var(--clr-main-above);
+  border-radius: 2px;
+  padding-bottom: 16px;
+  box-shadow: 5px 5px var(--clr-main-above);
+}
+
+.november > section + section {
+  margin-top: 28px;
+}
+
+/*......................................................................................................... -> main -> .november -> section -> .......*/
+
+.bi-person {
+  color: white;
+  background-color: var(--clr-main-below);
+  border-radius: 2px;
+  width: 39px;
+  height: 39px;
+  margin-top: 15px;
+  margin-left: 13px;
+  margin-right: 27px;
+}
+
+.the-names {
+  color: var(--clr-main-above);
+  margin-bottom: 0;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  font-size: 12px;
+  color: var(--clr-main-above);
+  font-family: "Source Sans Pro", sans-serif;
+}
