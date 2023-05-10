@@ -20,121 +20,184 @@
     <title>Student hub design</title>
   </head>
   <body>
-    <div class="div-body">
-      <aside>
-        <p class="ansicht">Ansicht Students</p>
-      </aside>
-      <div class="div-outward">
-        <header>
-          <div class="div-header-heading">
+    <aside>
+      <p class="ansicht">Ansicht Students</p>
+    </aside>
+    <div class="div-outward">
+      <header>
+        <div class="div-header-heading">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+          <h1>CODING BOOTCAMPS EUROPE</h1>
+        </div>
+        <div class="div-header-arrow-light1"></div>
+        <div class="div-header-arrow-light2">
+          <svg
+            class="svg-arrow"
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <polygon points="0,0 50,100 100,0" fill="#8849cf" />
+          </svg>
+        </div>
+        <div class="div-header-arrow-dark">
+          <svg
+            class="svg-arrow"
+            width="100%"
+            height="100%"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <polygon points="0,0 50,100 100,0" fill="#6a1cc3" />
+          </svg>
+        </div>
+      </header>
+      <main>
+        <article class="students">
+          <section class="section-1">
+            <h2 class="students-h2">Students</h2>
+            <p class="first-paragraph">Your fellow students</p>
+          </section>
+          <section class="section-2">
+            <form class="form-input">
+              <div class="input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+                <input
+                  class="search"
+                  type="search"
+                  placeholder="Search for students names"
+                  value=""
+                />
+              </div>
+              <div class="dropdown-lists">
+                <select name="month-year">
+                  <option value="NovemberClass2021">NovemberClass2021</option>
+                </select>
+                <select name="course-type">
+                  <option value="Full-time">Full-time</option>
+                </select>
+              </div>
+            </form>
+          </section>
+        </article>
+        <article class="november">
+          <h2 class="november-h2">Full-time November Class of 2021</h2>
+          <section class="Dmitry">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi bi-list"
+              class="bi bi-person"
               viewBox="0 0 16 16"
             >
               <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
               />
             </svg>
-            <h1>CODING BOOTCAMPS EUROPE</h1>
-          </div>
-          <div class="div-header-arrow-light1"></div>
-          <div class="div-header-arrow-light2">
-            <svg
-              class="svg-arrow"
-              width="100%"
-              height="100%"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-            >
-              <polygon points="0,0 50,100 100,0" fill="#8849cf" />
-            </svg>
-          </div>
-          <div class="div-header-arrow-dark">
-            <svg
-              class="svg-arrow"
-              width="100%"
-              height="100%"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-            >
-              <polygon points="0,0 50,100 100,0" fill="#6a1cc3" />
-            </svg>
-          </div>
-        </header>
-        <main>
-          <article>
-            <section class="section-1">
-              <h2 class="students-h2">Students</h2>
-              <p class="first-paragraph">Your fellow students</p>
-              <form class="form-input">
-                <div class="input-container">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                    />
-                  </svg>
-                  <input
-                    class="search"
-                    type="search"
-                    placeholder="Search for students names"
-                    value=""
-                  />
-                </div>
-                <div class="dropdown-lists">
-                  <select name="month-year" id="month-year">
-                    <option value="NovemberClass2021">NovemberClass2021</option>
-                  </select>
-                  <select name="course-type" id="course-type">
-                    <option value="Full-time">Full-time</option>
-                  </select>
-                </div>
-              </form>
-            </section>
-            <section class="section-2">
-              <div></div>
-              <div>
-                <div></div>
-                <div></div>
-              </div>
-            </section>
-          </article>
-          <article>
-            <h2 class="november-h2">Full-time November Class of 2021</h2>
             <div>
               <p class="the-names">Dmitry Kolesnikov</p>
               <a href="github.com/Dimi87">github.com/Dimi87</a>
             </div>
+          </section>
+          <section class="Justus">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+              />
+            </svg>
             <div>
               <p class="the-names">Justus Siebert</p>
               <a href="github.com/justussiebert">github.com/justussiebert</a>
             </div>
+          </section>
+          <section class="Manuel">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+              />
+            </svg>
             <div>
               <p class="the-names">Manuel Hohenadl</p>
               <a href="github.com/Manoo89">github.com/Manoo89</a>
             </div>
+          </section>
+          <section class="Ovidiu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+              />
+            </svg>
             <div>
               <p class="the-names">Ovidiu Goanta</p>
               <a href="github.com/Goanta-Ovidiu">github.com/Goanta-Ovidiu</a>
             </div>
+          </section>
+          <section class="Patricia">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+              />
+            </svg>
             <div>
               <p class="the-names">Patricia Prager</p>
               <a href="github.com/patprager">github.com/patprager</a>
             </div>
-          </article>
-        </main>
-      </div>
+          </section>
+        </article>
+      </main>
     </div>
   </body>
 </html>

@@ -6,7 +6,6 @@
   --clr-background-body: #e5e5e5;
   --clr-main-above: #6a1cc3;
   --clr-main-below: #8849cf;
-  --font-normal: ;
 }
 
 html {
@@ -24,11 +23,7 @@ body {
   align-items: center;
 }
 
-.div-body {
-  max-width: 600px;
-}
-
-/*........................................................................................................................ All aside styles */
+/*............................................................................................................................... -> aside .......*/
 
 aside {
   width: 391px;
@@ -41,13 +36,15 @@ aside {
   opacity: 0.3;
 }
 
-/*....................................................................................................................... All header styles */
+/*...................................................................................................................... -> .div-outward ......... */
 
 .div-outward {
   width: 391px;
-  _height: 100vh;
+  max-width: 600px;
   background-color: white;
 }
+
+/*.............................................................................................................................. -> header ........*/
 
 header {
   height: 95px;
@@ -101,7 +98,7 @@ h1 {
   width: 100%;
 }
 
-/*......................................................................................................................... All main styles */
+/*.............................................................................................................................. -> main ..........*/
 
 main {
   padding-bottom: 70px;
@@ -113,7 +110,7 @@ article {
   margin-top: 50px;
 }
 
-/*........................................................................................................... All section-1 styles */
+/*........................................................................................................ -> main -> .students -> .section-1 ......*/
 
 .students-h2 {
   font-size: 18px;
@@ -128,9 +125,22 @@ article {
   font-weight: 600;
 }
 
+/*..................................................................... -> main -> .students -> .section-2 -> form-input -> .input-container ........*/
+
+.input-container {
+  position: relative;
+}
+
+.bi-search {
+  position: absolute;
+  top: 27.5%;
+  right: 5%;
+}
+
 .search {
   width: 100%;
   height: 36px;
+  padding-left: 7px;
   border: 1.75px solid var(--clr-main-above);
   border-radius: 2px;
   font-family: "Source Sans Pro", sans-serif;
@@ -146,50 +156,88 @@ article {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.input-container {
-  position: relative;
-}
-
-.bi-search {
-  position: absolute;
-  top: 27.5%;
-  right: 5%;
-}
+/*.................................................................................... -> main -> .students -> .section-2 -> .dropdown-lists .......*/
 
 .dropdown-lists {
-  margin-top: 20px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 select {
+  appearance: none;
   height: 38px;
   border: 1.75px solid var(--clr-main-above);
   border-radius: 2px;
   font-size: 14px;
   font-weight: 600;
   color: var(--clr-main-above);
-  padding-inline: 18px 18px;
+  padding-inline: 18px 35px;
   font-family: "Source Sans Pro", sans-serif;
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      white 50%,
+      white 60%,
+      transparent 60%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 50%,
+      white 50%,
+      white 60%,
+      transparent 60%
+    ),
+    linear-gradient(var(--clr-main-below), var(--clr-main-below));
+  background-size: 4.875px 5.25px, 4.875px 5.25px, 17.4px 38px;
+  background-position: calc(100% - 8px) 53%, calc(100% - 3.3px) 53%,
+    calc(100% + 1%);
+
+  background-repeat: no-repeat;
 }
 
-/*............................................................................................................. All section-2 styles */
+/*..................................................................................................................... -> main -> november .......*/
 
 .november-h2 {
   font-size: 16px;
   color: #00000099;
 }
 
+.november > section {
+  display: flex;
+  border: 2px solid var(--clr-main-above);
+  border-radius: 2px;
+  padding-bottom: 16px;
+  box-shadow: 5px 5px var(--clr-main-above);
+}
+
+.november > section + section {
+  margin-top: 28px;
+}
+
+/*......................................................................................................... -> main -> .november -> section -> .......*/
+
+.bi-person {
+  color: white;
+  background-color: var(--clr-main-below);
+  border-radius: 2px;
+  width: 39px;
+  height: 39px;
+  margin-top: 15px;
+  margin-left: 13px;
+  margin-right: 27px;
+}
+
 .the-names {
   color: var(--clr-main-above);
+  margin-bottom: 0;
+  font-weight: 600;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
   font-size: 12px;
   color: var(--clr-main-above);
+  font-family: "Source Sans Pro", sans-serif;
 }
-
-/* The fonts
-font-family: 'Montserrat', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-*/
